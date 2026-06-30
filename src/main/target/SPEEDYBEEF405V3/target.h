@@ -25,7 +25,7 @@
 #pragma once
 
 #define TARGET_BOARD_IDENTIFIER "SB43"		
-#define USBD_PRODUCT_STRING  "SpeedyBeeF405V3"	
+#define USBD_PRODUCT_STRING  "SpeedyBeeF405V38S"	
 
 /*** Indicators ***/
 #define LED0                    PC8
@@ -128,9 +128,9 @@
 #define ADC_CHANNEL_2_PIN           PC1
 #define ADC_CHANNEL_3_PIN           PC2
 
-#define VBAT_ADC_CHANNEL            ADC_CHN_1
+#define RSSI_ADC_CHANNEL            ADC_CHN_1
 #define CURRENT_METER_ADC_CHANNEL   ADC_CHN_2
-#define RSSI_ADC_CHANNEL            ADC_CHN_3
+#define VBAT_ADC_CHANNEL            ADC_CHN_3
 
 // *************** LED *****************************
 #define USE_LED_STRIP
@@ -157,7 +157,7 @@
 
 #define MAX_PWM_OUTPUT_PORTS        9
 
-#define CURRENT_METER_SCALE         386
+#define CURRENT_METER_SCALE         3116
 
 #define TARGET_IO_PORTA         0xffff
 #define TARGET_IO_PORTB         0xffff
