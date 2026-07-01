@@ -33,19 +33,19 @@
 #define SPI2_MISO_PIN           PB14
 #define SPI2_MOSI_PIN           PB15
 
-#define USE_IMU_BMI270
-#define BMI270_SPI_BUS          BUS_SPI2
-#define BMI270_CS_PIN           PC13
-#define IMU_BMI270_ALIGN        CW270_DEG_FLIP
+#define USE_IMU_BMI160
+#define BMI160_SPI_BUS          BUS_SPI2
+#define BMI160_CS_PIN           PC13
+#define IMU_BMI160_ALIGN        CW270_DEG_FLIP
 
-#define USE_IMU_ICM42605
-#define ICM42605_SPI_BUS        BUS_SPI2
-#define ICM42605_CS_PIN         PC13
-#define IMU_ICM42605_ALIGN      CW180_DEG_FLIP
+//#define USE_IMU_ICM42605
+//#define ICM42605_SPI_BUS        BUS_SPI2
+//#define ICM42605_CS_PIN         PC13
+//#define IMU_ICM42605_ALIGN      CW180_DEG_FLIP
 
-#define USE_MAX7456
-#define MAX7456_SPI_BUS         BUS_SPI2
-#define MAX7456_CS_PIN          PB12
+//#define USE_MAX7456
+//#define MAX7456_SPI_BUS         BUS_SPI2
+//#define MAX7456_CS_PIN          PB12
 
 // *************** UART *****************************
 #define USE_VCP
@@ -88,7 +88,7 @@
 
 #define USE_MAG
 #define MAG_I2C_BUS             BUS_I2C1
-#define USE_MAG_ALL
+#define USE_MAG_QMC5883
 
 //#define PITOT_I2C_BUS           BUS_I2C1
 //#define TEMPERATURE_I2C_BUS     BUS_I2C1
@@ -123,13 +123,13 @@
 #define PINIO2_PIN                  PB10 // Camera switch
 
 // ***************  OTHERS *************************
-#define DEFAULT_FEATURES        (FEATURE_TX_PROF_SEL | FEATURE_OSD | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY | FEATURE_SOFTSERIAL )
+#define DEFAULT_FEATURES        (FEATURE_TX_PROF_SEL | FEATURE_OSD | FEATURE_CURRENT_METER | FEATURE_VBAT | FEATURE_TELEMETRY)
 
 #define VBAT_SCALE_DEFAULT      1100
 #define CURRENT_METER_SCALE     250  //F411-WTE 132A
 
 #define USE_DSHOT
-#define USE_ESC_SENSOR
+//#define USE_ESC_SENSOR
 #define USE_SERIAL_4WAY_BLHELI_INTERFACE
 
 #define TARGET_IO_PORTA         0xffff
